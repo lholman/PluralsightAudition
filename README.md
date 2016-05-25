@@ -47,8 +47,12 @@ In this module you will learn how to build quality automation scripts and code i
 
 ## Audition module 'Sharing PowerShell infrastructure code'
 * Sharing PowerShell infrastructure code
-	* Overview (1m) 
-		"We already use source control to track change, now we would like to run our tests every time a change is made to source control, and be able to see historically the success of those tests over time."
+	* Overview (30 seconds) 
+		** "We already use source control to track change, now we would like to run our tests every time a change is made to that source, so we know early on if a change has broken anything. We also want those changes to be visible to other people."
+	* Why AppVeyor? (2 mins)
+		** In the cloud (nothing to install) "Continuous Delivery for Windows"
+		** Free trial and free for open source projects
+		** It works with Github and is designed for Windows and PowerShell 
 	* Running pester tests on a build server (3m)
 		* TeamCity
 		* Jenkins
