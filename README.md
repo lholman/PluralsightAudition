@@ -48,25 +48,19 @@ In this module you will learn how to build quality automation scripts and code i
 ## Audition module 'Sharing PowerShell infrastructure code'
 * Sharing PowerShell infrastructure code
 	* Overview (30 seconds) 
+		** "Automation code is often a combination of very complex, locally saved, unversioned code that requires a lot of knowledge to execute. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output."
 		** "We already use source control to track change, now we would like to run our tests every time a change is made to that source, so we know early on if a change has broken anything. We also want those changes to be visible to other people."
 	* Why AppVeyor? (2 mins)
 		** In the cloud (nothing to install) "Continuous Delivery for Windows"
 		** Free trial and free for open source projects
 		** It works with Github and is designed for Windows and PowerShell 
-	* Running pester tests on a build server (3m)
-		* TeamCity
-		* Jenkins
-		* TravisCI
-		* VS Git with TFS express
+	* Running pester tests on AppVeyor (3m)
+		** Other CI/Build servers TeamCity/Jenkins/TravisCI/VS Git with TFS express
 	* Versioning scripts (2m)
+		** Semantic version numbering
 	* Packaging scripts (2m)
+		** Using NuGet
+	* Summary (2m)
+		** "We have taken the concept of locally saved, owned and maintained PowerShell scripts and made tracking changes both auditable and quality tested, ready for consumption."
 
-### The problem
-Automation code is often a combination of very complex, locally saved, unversioned code that requires a lot of knowledge to execute. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. 
-
-### Journey
-Be sure to define and demonstrate the problem, journey and solution
-
-### Solution
-
-## Conclusion
+Note: Be sure to define and demonstrate the problem, journey and solution
