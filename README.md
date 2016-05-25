@@ -10,10 +10,17 @@
 	* Adding the demo project to Github
 	* What not to add to version control
 * Unit testing infrastructure code with Pester for PowerShell
-	* Installing Pester
+	* Installing/Finding Pester
 	* Writing a failing test
 	* Making the test pass
 	* Writing testable PowerShell code using Test Driven Development (TDD)
+* PowerShell coding styles/options: See http://mikefrobbins.com/2016/01/14/powershell-script-module-design-placing-functions-directly-in-the-psm1-file-versus-dot-sourcing-separate-ps1-files/
+	* Script modules 
+	* Dot sourcing PS1 files
+* Sharing PowerShell infrastructure code
+	* Versioning 
+	* Packaging
+	* Documentation
 * Managing dependencies in PowerShell
 	* What is a dependency?
 	* PowerShell Modules and Cmdlets
@@ -26,13 +33,9 @@
 	* Mocking target systems	
 * Stubbing
 	* Stubbing the Windows File system
-
 * Handling warnings, errors and exceptions
 	* Negative testing
-* Sharing your PowerShell infrastructure code
-	* Versioning 
-	* Packaging
-	* Documentation
+
 
 ## References
 http://martinfowler.com/articles/mocksArentStubs.html
@@ -40,15 +43,25 @@ http://martinfowler.com/articles/mocksArentStubs.html
 ## Introduction
 30 seconds to tease about what I'll be teaching
 
-In this module you will learn how to build quality automation scripts and code in Powershell. You become familiar the Pester test Framwework for PowerShell and understand how to version and package infrastructure code.
+In this module you will learn how to build quality automation scripts and code in Powershell. You will become familiar with the Pester test Framwework for PowerShell and understand how to version and package infrastructure code.
 
-## Audition module ''
+## Audition module 'Sharing PowerShell infrastructure code'
+* Sharing PowerShell infrastructure code
+	* Overview (1m) 
+		"We already use source control to track change, now we would like to run our tests every time a change is made to source control, and be able to see historically the success of those tests over time."
+	* Running pester tests on a build server (3m)
+		* TeamCity
+		* Jenkins
+		* TravisCI
+		* VS Git with TFS express
+	* Versioning scripts (2m)
+	* Packaging scripts (2m)
 
 ### The problem
-All too frequently I have observed that automation code and "processes" are a combination of very complex, unversioned locally saved code and dependencies. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. Rarely do they implement consistent patterns for error handling, retry, auditing or security and idempotency is often not understood.
+Automation code is often a combination of very complex, locally saved, unversioned code that requires a lot of knowledge to execute. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. 
 
 ### Journey
-Be sure to define and demostrate the problem, journey and solution
+Be sure to define and demonstrate the problem, journey and solution
 
 ### Solution
 
